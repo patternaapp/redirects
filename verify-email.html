@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patterna — Vérifier l'email</title>
+  <title>Patterna — Verify email</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -38,10 +38,10 @@
 <body>
   <div class="card">
     <div class="brand">Patterna ✦</div>
-    <h1>Vérification de l'email…</h1>
-    <p id="status">Ouverture de Patterna…</p>
-    <a id="open-btn" class="btn" href="#">Ouvrir l'app</a>
-    <p class="hint">Si l'app ne s'ouvre pas, vérifie qu'elle est installée et réessaie.</p>
+    <h1>Verifying your email…</h1>
+    <p id="status">Opening Patterna…</p>
+    <a id="open-btn" class="btn" href="#">Open app</a>
+    <p class="hint">If the app doesn't open, make sure it's installed and try again.</p>
   </div>
 
   <script>
@@ -51,7 +51,7 @@
       var secret = params.get("secret");
 
       if (!userId || !secret) {
-        document.getElementById("status").textContent = "Lien invalide ou expiré.";
+        document.getElementById("status").textContent = "Invalid or expired link.";
         document.getElementById("open-btn").style.display = "none";
         return;
       }
